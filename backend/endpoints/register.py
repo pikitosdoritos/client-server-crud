@@ -6,7 +6,7 @@ from ..security import hash_password
 
 router = APIRouter(prefix="/register", tags=["register"])
 
-@router.post("/user/create", response_model=schemas.CreateUser)
+@router.post("/user/create", response_model=schemas.UserRead)
 def create_user(payload: schemas.CreateUser, db: Session = Depends(get_db)):
 
     existing_user = db.query(models.User).filter(
