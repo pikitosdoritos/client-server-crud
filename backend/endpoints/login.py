@@ -6,7 +6,7 @@ from backend.security import verify_password
 
 router = APIRouter(prefix="/login", tags=["login"])
 
-@router.post("/user/login", response_model=schemas.LoginResponse)
+@router.post("/user", response_model=schemas.LoginResponse)
 def login_user(payload: schemas.LogIn, db: Session = Depends(get_db)):
     user = db.query(models.User).filter(
         models.User.email == payload.email, 
