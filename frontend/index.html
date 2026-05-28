@@ -11,31 +11,31 @@
 
 <body>
     <main class="auth-page">
-        <form class="form" id="signin" onsubmit="handleSignIn(event)">
+        <form class="form" id="signin" onsubmit="handleSignIn(event)" >
             <h2>Sign In</h2>
 
             <label for="emailin">Email</label>
-            <input type="email" name="email" id="emailin" autocomplete="username" required>
+            <input type="email" name="email" id="emailin" required>
 
             <label for="passwordin">Password</label>
-            <input type="password" name="password" id="passwordin" autocomplete="current-password" required>
+            <input type="password" name="password" id="passwordin" required>
 
             <button type="submit">Sign In</button>
 
             <a href="#" onclick="switchForm(event)">Don&apos;t have an account? Create one.</a>
         </form>
 
-        <form class="form" id="signup" hidden onsubmit="handleSignUp(event)">
+        <form class="form" id="signup" hidden onsubmit="handleSignUp(event)" autocomplete="off">
             <h2>Sign Up</h2>
 
             <label for="fullname">Full Name</label>
-            <input type="text" name="name" id="fullname" autocomplete="name" required>
+            <input type="text" name="name" id="fullname" required>
 
             <label for="emailup">Email</label>
-            <input type="email" name="email" id="emailup" autocomplete="username" required>
+            <input type="email" name="email" id="emailup" required>
 
             <label for="passwordup">Password</label>
-            <input type="password" name="password" id="passwordup" autocomplete="new-password" required>
+            <input type="password" name="password" id="passwordup" required>
 
             <button type="submit">Sign Up</button>
 
