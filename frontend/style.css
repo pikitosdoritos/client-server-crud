@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    align-content: center;
+}
+
+.form {
+    display: grid;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 650px;
+    height: 300px;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    gap: 20px;
+
+    button {
+        width: 100px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    input {
+        width: 400px;
+        margin: auto;
+    }
+}
