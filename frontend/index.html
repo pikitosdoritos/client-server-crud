@@ -10,36 +10,38 @@
 </head>
 
 <body>
-    <form class="form" id="signin">
-        <h2>Sign In</h2>
+    <main class="auth-page">
+        <form class="form" id="signin">
+            <h2>Sign In</h2>
 
-        <label for="emailin">Email</label>
-        <input type="text" name="email" id="emailin">
+            <label for="emailin">Email</label>
+            <input type="email" name="email" id="emailin" autocomplete="username" required>
 
-        <label for="passwordin">Password</label>
-        <input type="password" name="password" id="passwordin">
+            <label for="passwordin">Password</label>
+            <input type="password" name="password" id="passwordin" autocomplete="current-password" required>
 
-        <button>Sign In</button>
+            <button type="submit">Sign In</button>
 
-        <a href="." onclick="switchForm(event)">Click there if you don`t have account</a>
-    </form>
+            <a href="#" onclick="switchForm(event)">Don&apos;t have an account? Create one.</a>
+        </form>
 
-    <form class="form" id="signup" hidden>
-        <h2>Sign Up</h2>
+        <form class="form" id="signup" hidden>
+            <h2>Sign Up</h2>
 
-        <label for="fullname">Full Name</label>
-        <input type="text" name="fullname" id="fullname">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" autocomplete="name" required>
 
-        <label for="emailup">Email</label>
-        <input type="text" name="email" id="emailup">
+            <label for="emailup">Email</label>
+            <input type="email" name="email" id="emailup" autocomplete="username" required>
 
-        <label for="passwordup">Password</label>
-        <input type="password" name="password" id="passwordup">
+            <label for="passwordup">Password</label>
+            <input type="password" name="password" id="passwordup" autocomplete="new-password" required>
 
-        <button>Sign Up</button>
+            <button type="submit">Sign Up</button>
 
-        <a href="." onclick="switchForm(event)">Click here if you have an account</a>
-    </form>
+            <a href="#" onclick="switchForm(event)">Already have an account? Sign in.</a>
+        </form>
+    </main>
 </body>
 
 </html>
