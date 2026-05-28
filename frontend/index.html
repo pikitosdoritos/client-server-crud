@@ -11,7 +11,7 @@
 
 <body>
     <main class="auth-page">
-        <form class="form" id="signin">
+        <form class="form" id="signin" onsubmit="handleSignIn(event)">
             <h2>Sign In</h2>
 
             <label for="emailin">Email</label>
@@ -25,7 +25,7 @@
             <a href="#" onclick="switchForm(event)">Don&apos;t have an account? Create one.</a>
         </form>
 
-        <form class="form" id="signup" hidden>
+        <form class="form" id="signup" hidden onsubmit="handleSignUp(event)">
             <h2>Sign Up</h2>
 
             <label for="fullname">Full Name</label>
